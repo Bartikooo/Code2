@@ -1,0 +1,8 @@
+src/Zadanie4.o: src/Zadanie4.c /usr/include/stdc-predef.h src/pole4.h \
+ src/objetosc4.h
+
+/usr/include/stdc-predef.h:
+
+src/pole4.h:
+
+src/objetosc4.h:

@@ -1,0 +1,8 @@
+src/Code2.o: src/Code2.c /usr/include/stdc-predef.h src/pole.h \
+ src/objetosc.h
+
+/usr/include/stdc-predef.h:
+
+src/pole.h:
+
+src/objetosc.h:
