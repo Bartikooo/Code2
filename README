@@ -1,0 +1,5 @@
+Aby uruchomić plik należy: rozpakować archiwum https://github.com/Bartikooo/Code2/raw/main/code2-2.0.tar.gz , przejść do utworzonego katalogu programu a
+następnie wydać trzy standardowe polecenia: 
+./configure
+make
+sudo make install
