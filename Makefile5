@@ -1,0 +1,12 @@
+Code2.o:  Code2.c pole.h objetosc.h
+	gcc -c Code2.c
+clean:
+	rm -f *.o *.a *.so Code2
+%.o: %.c
+	gcc -c $<	
+pole.a: pole.o
+	ar rs $@ $^
+objetosc.so: objetosc.o
+	gcc -shared -o $@ $^
+Code2: Code2.o pole.a objetosc.so
+	gcc -Wl,-R -Wl,${PWD} -o Code2 Code2.c objetosc.so -L. pole.a
